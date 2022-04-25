@@ -1,0 +1,91 @@
+<!--John Crawford-->
+<!--SIU-->
+<!--Developed: 2/20/2022-->
+<!--Tested: 4/4/2022-->
+
+<!DOCTYPE html> <!--html tag-->
+<head>  <!--Head tag-->
+
+<title>John's Bike Shop Contact info</title> <!--Title tag-->
+<link rel="stylesheet" href="CSS/slicknav.css">
+<link rel="stylesheet" href="CSS/styles.css">
+<meta charset="UTF-8">  <!--Meta name description-->
+
+</head> <!--close head tag-->
+
+<body class="homebody"> <!--body tag-->
+    <ul class="menu">
+            <li><a class="active" href="index.html">home</a></li>
+            <li><a href="Sale.html">Sales</a></li>
+            <li><a href="rental.html">Rentals</a></li>
+            <li><a href="Contact.html">Contact info</a></li>
+            <li><a href="Services.html">Services</a></li>
+    </ul>
+    
+    <h1>Contact Information</h1>
+    <figure class="bike">
+        <img  class="bike" src="Bike images/bike.jpg"/>
+        <img class="seat" src="Bike images/bike seat.png"/>
+    </figure>
+    
+    <!--form-->
+
+    <h1>Please complete our survey</h1>
+    <form name="myform" action="survey_data.html" method="get">
+
+        <h2>Account info</h2>
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" autofocused required><br>
+        <label for="pass">Password:</label>
+        <input type="pass" name="pass" id="pass" required><br>
+	
+	    <h2>Personal information</h2>
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" id="firstname" required><br>
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" id="lastname" required><br>
+        <label for="Phone">Phone number:</label>
+        <input type="number" name="phone" id="phone" optional><br>
+
+	    <h2>Geographic information</h2>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" required> 
+	    <label for="state">State:</label>
+	    <input type="text" name="state" id="state" required placeholder="Two characters"
+		pattern="[A-Za-Z]{2}" title="Must be 2 characters"><br>
+	    <label for="zip">zip code:</label>
+	    <input type="text" name="zip" id="zip" required placeholder="Five digits"
+		pattern="\d{5}" title="Must be 99999"><br>
+
+	    <h2>Feedback</h2>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="comments">Comment:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="60">
+        </textarea><br>
+
+        <h2>What are you looking for?</h2>
+	    <input type="radio" name="inquiry" id="purchase" value="purchase">
+	    <label for="purchase">Purchase</label><br>
+	    <input type="radio" name="inquiry" id="repair" value="repair">
+	    <label for="repair">repair</label><br>
+	    <input type="radio" name="inquiry" id="question" value="question">
+	    <label for="question">Rent</label><br>
+        <input type="radio" name="item" id="Bike" value="Bike">
+	    <label for="Bike">Bikes</label><br>
+        <input type="radio" name="item" id="accessories" value="accessories">
+	    <label for="accessories">Accessories</label><br>
+
+        <h2>Thank you for taking our survey!</h2>
+        <input type="submit" name="button" id="button" value="Submit">
+        <input type="reset" name="reset" id="reset"> 
+    </form>
+    
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="CSS\jquery.slicknav.js"></script>
+    <script>
+	    $('.menu').slicknav();
+    </script>
+</script>
+</body> <!--body tag-->  

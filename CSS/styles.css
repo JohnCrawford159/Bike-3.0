@@ -1,0 +1,233 @@
+/*John Crawford
+SIU
+Developed: 2/7/2022
+Tested: 4/4/2022
+*/
+
+.homebody { /*this is the body for the css formating*/
+    margin: 10px; /*The margin is set to 10 pixels*/
+    width: 725px; /*The width is set to 725 pixels*/
+    border: 1px solid black; /*The border for the body is set to 1 pixel with a black color*/
+    background: lightgoldenrodyellow; /*The background for the page is set to a light golden yellow*/
+  }
+
+  body {
+    border: 1px solid black; /*The border for the body is set to 1 pixel with a black color*/
+    background: lightgoldenrodyellow; /*The background for the page is set to a light golden yellow*/
+    margin: 1px;
+    min-height: 1500px;
+    max-height: 2000px;
+  }
+
+  h1 {
+    padding: 10px; /*The padding for the 1st header is 10 pixels*/
+  }
+  h2 {
+    padding: 10px; /*Padding for the 2nnd header is set to 10 pixels*/
+  }
+  head {
+    padding: 10px; /*For the head of the page the padding is set to 10px*/
+  }
+  p {
+    padding-left: 10px; /*Padding for the left and right paragraphs is set to 10 pixels*/
+  }
+  p {
+    padding-right: 10px;
+  }
+  li {
+    padding-left: 10px; /*The list on the page for bikes is set to padding on the left at 10 pixels*/
+  }
+  img {
+    border: 10px solid blue; /*This sets a border around the bike image to 10 pixels large with a solid blue color*/
+    border-style: solid; /*This sets the style of the border*/
+    border-radius: 20px; /*This puts a radius for the border which gives it the rounded corners*/
+    position: static; /*This sets the image to have a position on the page and setting it as static has it respond with the body*/
+    left: 100px; /*It is set to move right*/
+    margin: 60%;
+    margin: 0 auto;
+  }
+
+  /*Figure of main graphic*/
+
+  figure .homebody {
+    float: right;
+    margin-right: 1.5em; 
+}
+
+figure1 {
+  float: left;
+  margin-right: 1.5em;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+  .bike {
+    width: 65%;
+   min-width: 300px;
+    max-width: 1024px;
+    position: relative;	
+    margin:  0 auto;
+    margin-bottom: 10px;
+    max-width: 630px;
+    height: 350px;
+  }
+
+  .bike1 {
+    width: 60%;
+   min-width: 300px;
+    max-width: 350px;
+    position: relative;	
+    margin:  0 auto;
+    margin-bottom: 10px;
+    max-width: 350px;
+    height: 250px;
+  }
+
+  .bike img {
+    
+    width: 100%;
+    min-width: 300px;
+    max-width: 1024px;
+    position: absolute;	
+	overflow: hidden;
+    border: 2px solid #B5D3E7;
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    margin: 0;
+	opacity: 1;
+    /* Sets the width and height for the images*/
+	max-width: 1024px;
+	height: 350px;
+}
+
+.bike1 img {
+    
+  width: 100%;
+  min-width: 300px;
+  max-width: 350px;
+  position: absolute;	
+overflow: hidden;
+  border: 2px solid #B5D3E7;
+  border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  margin: 0;
+opacity: 1;
+  /* Sets the width and height for the images*/
+max-width: 350px;
+height: 250px;
+}
+
+/*  fading effect. */
+
+.bike .seat{
+  z-index: 9999;
+  transition: opacity 1s linear;
+  cursor: pointer;
+}
+
+.bike1 .seat1{
+  z-index: 9999;
+  transition: opacity 1s linear;
+  cursor: pointer;
+}
+
+/* burned in effect on 2nd image */
+.bike:hover > .seat {
+  opacity: 0.1;
+}
+
+.bike1:hover > .seat1 {
+  opacity: 0.1;
+}
+
+
+
+
+
+
+/* Rentals Page Stuff */
+  .imgrental { /*/img formatting*/
+    border: 1px solid blue; /*sets size of border and color*/
+    border-radius: 10px;  /*sets border radius for rounded corners*/
+    margin: .25em  1em 1em 0;
+  }
+
+  column1 {
+    float: left;
+    margin-left: 50px;
+    width: 450px;
+    height: 500px;
+  }
+
+  column2 {
+    float: right;
+    margin-right: 50px;
+    width: 450px;
+    height: 500px;
+  }
+
+  /*Table*/
+
+  table, th, td {
+    border: 1px solid black;
+    margin-left: 10px;
+  }
+
+  /*Form*/
+
+  form {
+    margin-left: 10px;
+  }
+
+
+  /*menu Stuff*/
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.menu li {
+    float: left;
+  }
+  
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.menu li a:hover {
+    background-color: #111;
+  }
+
+.slicknav_menu {
+	display: none;
+}
+
+@media all and (max-width: 769px) {
+	.slicknav_menu {
+		display: block;
+        width: 40%;
+        float: right;
+        background: transparent;
+	}
+    .slicknav_menu{
+        background: #333;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .column {
+      width: 100%;
+    }}
