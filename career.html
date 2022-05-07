@@ -1,0 +1,88 @@
+<!--John Crawford-->
+<!--SIU-->
+<!--Developed: 2/20/2022-->
+<!--Tested: 4/4/2022-->
+
+<!DOCTYPE html> <!--html tag-->
+<head>  <!--Head tag-->
+
+<title>career</title> <!--Title tag-->
+<link rel="stylesheet" href="CSS/slicknav.css">
+<link rel="stylesheet" href="CSS/styles.css">
+<meta charset="UTF-8">  <!--Meta name description-->
+
+</head> <!--close head tag-->
+
+<body class="homebody"> <!--body tag-->
+    <ul class="menu">
+        <li><a class="active" href="home.html">home</a></li>
+        <li><a href="Location.html">location</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="career.html">career</a></li>
+        <li><a href="specials.html">Specials</a></li>
+</ul>
+    
+    <figure class="choc">
+        <img  class="choc" src="images/Chocolate Pancake.jpg"/>
+        <img class="micky" src="images/Micky mouse pancake.jpg"/>
+        </figure>
+    
+    <!--form-->
+
+    <h1>Application</h1>
+    <form name="myform" action="survey_data.html" method="get">
+
+        <h2>Name and Address</h2>
+        <label for="name">Name (First, MI, Last):</label>
+        <input type="text" name="name" id="name" autofocused required><br>
+        <label for="address">Mailing Address:</label>
+        <input type="text" name="address" id="address" required><br>
+        <label for="location">City, State, and Zip Code:</label>
+        <input type="text" name="location" id="location" required><br>
+        <label for="phone">Phone number:</label>
+        <input type="number" name="phone" id="phone" required><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="social">Social Security Number:</label>
+        <input type="number" name="social" id="social" required><br>
+	
+	    <h1>Job type</h1>
+        <h2>Days/hours available to work</h2>
+        <input type="checkbox" name="inquiry" id="Mon." value="Mon.">
+	    <label for="Mon.">Mon.</label><br>
+        <input type="checkbox" name="inquiry" id="Tue." value="Tue.">
+	    <label for="Tue.">Tue.</label><br>
+        <input type="checkbox" name="inquiry" id="Wed." value="Wed.">
+	    <label for="Wed.">Wed.</label><br>
+        <input type="checkbox" name="inquiry" id="thurs." value="thurs.">
+	    <label for="Thurs.">Thurs.</label><br>
+        <input type="checkbox" name="inquiry" id="Fri." value="Fri.">
+	    <label for="Fri.">Fri.</label><br>
+        <input type="checkbox" name="inquiry" id="Sat." value="Sat.">
+	    <label for="Sat.">Sat.</label><br>
+        <input type="checkbox" name="inquiry" id="Sun." value="Sun.">
+	    <label for="Sun.">Sun.</label><br>
+        <h2>Seeking a:</h2>
+        <input type="radio" name="inquiry" id="full-time job" value="full-time job">
+	    <label for="full-time job">full-time job</label><br>
+        <input type="radio" name="inquiry" id="part-time job" value="part-time job">
+	    <label for="part-time job">part-time job</label><br>
+        <label for="How many hours can you work weekly?">How many hours can you work weekly?</label><br>
+        <input type="text" id="How many hours can you work weekly?" name="How many hours can you work weekly?"
+        patteren="[A-Za-Z]{2}" title="Must be 2 characters">
+        </input><br>
+        
+
+        <h2>Thank you for applying!</h2>
+        <input type="submit" name="button" id="button" value="Submit">
+        <input type="reset" name="reset" id="reset"> 
+    </form>
+    
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="CSS\jquery.slicknav.js"></script>
+    <script>
+	    $('.menu').slicknav();
+    </script>
+</script>
+</body> <!--body tag-->  

@@ -15,7 +15,15 @@ Tested: 4/4/2022
     border: 1px solid black; /*The border for the body is set to 1 pixel with a black color*/
     background: lightgoldenrodyellow; /*The background for the page is set to a light golden yellow*/
     margin: 1px;
-    min-height: 1500px;
+    min-height: 900px;
+    max-height: 2000px;
+  }
+
+  menu {   
+    border: 1px solid black; /*The border for the body is set to 1 pixel with a black color*/
+    background: lightgoldenrodyellow; /*The background for the page is set to a light golden yellow*/
+    margin: 1px;
+    min-height: 1600px;
     max-height: 2000px;
   }
 
@@ -61,7 +69,7 @@ figure1 {
   margin-bottom: 100px;
 }
 
-  .bike {
+  .choc {
     width: 65%;
    min-width: 300px;
     max-width: 1024px;
@@ -83,7 +91,7 @@ figure1 {
     height: 250px;
   }
 
-  .bike img {
+  .choc img {
     
     width: 100%;
     min-width: 300px;
@@ -119,7 +127,7 @@ height: 250px;
 
 /*  fading effect. */
 
-.bike .seat{
+.choc .micky{
   z-index: 9999;
   transition: opacity 1s linear;
   cursor: pointer;
@@ -132,7 +140,7 @@ height: 250px;
 }
 
 /* burned in effect on 2nd image */
-.bike:hover > .seat {
+.choc:hover > .micky {
   opacity: 0.1;
 }
 
@@ -146,13 +154,15 @@ height: 250px;
 
 
 /* Rentals Page Stuff */
-  .imgrental { /*/img formatting*/
+  .imgmenu { /*/img formatting*/
     border: 1px solid blue; /*sets size of border and color*/
     border-radius: 10px;  /*sets border radius for rounded corners*/
     margin: .25em  1em 1em 0;
   }
 
   column1 {
+    display: flex;
+    flex-direction: column;
     float: left;
     margin-left: 50px;
     width: 450px;
@@ -160,7 +170,10 @@ height: 250px;
   }
 
   column2 {
+    display: flex;
+    flex-direction: column;
     float: right;
+    margin-top: 200px;
     margin-right: 50px;
     width: 450px;
     height: 500px;
